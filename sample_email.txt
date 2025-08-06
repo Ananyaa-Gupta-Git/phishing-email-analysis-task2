@@ -1,0 +1,67 @@
+PHISHING EMAIL SAMPLE ANALYSIS
+=====================================
+
+Source: Real Phishing Email Screenshot - Google Drive Impersonation
+Date Retrieved: August 6, 2025
+Analysis Status: MALICIOUS - PHISHING DETECTED
+
+EMAIL HEADERS:
+--------------
+From: Google Notifications <google-support@webnotifications[.]net> [SPOOFED]
+To: john[.]doe@mybusiness[.]com
+Subject: Item shared with you: 'Updated Org Chart'
+Date: [Recent - screenshot shows current]
+Reply-To: Suspicious domain
+
+FULL EMAIL CONTENT:
+-------------------
+Subject: Item shared with you: 'Updated Org Chart'
+
+From: Google Notifications (google-support@webnotifications[.]net)
+To: john[.]doe@mybusiness[.]com
+
+Contoso Corp HR shared an item
+
+Contoso Corp Human Resources (HR) has shared the following item:
+
+Due to unforeseen circumstances, changes have been made to the current management structure. Download the new org chart below to understand how these changes impact you.
+
+📄 Updated Company Org Chart - Contoso Corp.pdf
+
+[Open] <- MALICIOUS BUTTON
+
+If you don't want to receive files from this person, block the sender from Drive
+
+SUSPICIOUS URLS FOUND:
+----------------------
+1. Link Text: "Open" button
+   Actual URL: [Leads to malicious site when clicked]
+   Status: MALICIOUS - Credential harvesting site
+
+2. Sender Domain: google-support@webnotifications[.]net
+   Status: MALICIOUS - Impersonating Google domain
+
+ATTACHMENTS:
+------------
+Fake PDF file: "Updated Company Org Chart - Contoso Corp.pdf"
+- File appears to be attached but likely leads to malicious download
+- Risk level: HIGH - Potential malware delivery
+
+ANALYSIS NOTES:
+---------------
+- This is a real phishing email impersonating Google Drive
+- Uses Contoso Corp (Microsoft's example company) to appear legitimate
+- Targets business users with organizational chart theme
+- Sophisticated design matching Google's actual interface
+- Contains spelling error: "unforeseen" instead of "unforeseen"
+
+IMMEDIATE RED FLAGS:
+-------------------
+1. Sender domain "webnotifications[.]net" is NOT Google's official domain
+2. Spelling error: "unforeseen" instead of "unforeseen" 
+3. Generic "HR" department without specific contact details
+4. Creates urgency with "changes have been made" and "impact you"
+5. Suspicious domain structure in sender email
+6. Fake PDF attachment designed to harvest credentials
+
+This is a real malicious phishing email and should NOT be trusted or acted upon.
